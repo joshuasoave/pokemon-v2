@@ -1,0 +1,582 @@
+/*///////////////////*/
+/* mobile styling  */
+/*///////////////////*/
+
+.normal-body {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.rocket-body {
+  background: black;
+  color: white;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.normal-header {
+  background: #ffcb05;
+  text-align: center;
+  color: #2a75bb;
+  letter-spacing: 0.05em;
+  border-top: 2px solid #3c5aa6;
+  border-bottom: 2px solid #3c5aa6;
+}
+
+.normal-header h1 {
+  text-shadow: 1px 2px whitesmoke;
+  font-size: 44px;
+  background: white;
+  font-family: "Ubuntu Condensed", sans-serif;
+  width: 100%;
+  margin-left: auto;
+  border-top: 2px solid #3c5aa6;
+  border-bottom: 2px solid #3c5aa6;
+}
+
+.normal-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
+  background: #3c5aa6;
+  border-top: 2px solid #3c5aa6;
+  border-bottom: 2px solid #3c5aa6;
+  font-size: 18px;
+}
+
+.normal-nav a {
+  color: white;
+  padding: 0.2em;
+  text-decoration: none;
+}
+
+/* ROCKET MOBILE HEADER  */
+.rocket-header {
+  background: black;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.05em;
+  border: 2px solid whitesmoke;
+  border-bottom: none;
+}
+
+.rocket-header h1 {
+  text-shadow: 1px 2px rgba(256, 0, 10, 1);
+  font-size: 44px;
+  background: black;
+  font-family: "Ubuntu Condensed", serif;
+  width: 100%;
+  margin-left: auto;
+}
+
+.rocket-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
+  background: rgba(256, 0, 10, 1);
+  border: 2px solid whitesmoke;
+  font-size: 18px;
+}
+
+.rocket-nav a {
+  color: white;
+  padding: 0.2em;
+  text-decoration: none;
+}
+
+/* normal container */
+
+.container {
+  margin-left: 1em;
+  margin-right: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  height: 100%;
+}
+
+.wtp-button {
+  margin: 4em;
+}
+
+/* who's that pokemon normal button  */
+.normal-randomizer {
+  background: #ffcb05;
+  color: #3c5aa6;
+  width: 250px;
+  height: 70px;
+  font-size: 26px;
+  box-shadow: 3px 5px #3c5aa6;
+  font-family: "Fjalla One", sans-serif;
+}
+
+/* who's that pokemon rocket button  */
+
+.rocket-randomizer {
+  background: black;
+  color: white;
+  width: 250px;
+  height: 70px;
+  font-size: 26px;
+  box-shadow: 3px 5px rgba(256, 0, 10, 1);
+  font-family: "Fjalla One", sans-serif;
+  margin: 2em;
+  border: 2px solid rgba(256, 0, 10, 1);
+}
+
+/* applies to both modals and imgs   */
+
+#modal-text h3 {
+  font-weight: bold;
+  text-decoration: underline;
+  font-family: "Fjalla One", sans-serif;
+}
+
+img {
+  margin-bottom: 2em;
+}
+
+.current-pokemon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pkmn-sprite {
+  height: 200px;
+  width: 200px;
+}
+
+input {
+  margin-bottom: 2em;
+  height: 20px;
+  width: 200px;
+}
+
+#hint {
+  margin-bottom: 2em;
+}
+
+.hint-modal img {
+  margin-bottom: 0;
+}
+
+/* about modal text size  */
+
+#about-text p {
+  font-size: 24px;
+  margin-left: 1.3em;
+  margin-right: 1.3em;
+}
+
+/* normal mobile hints  */
+
+.normal-hint,
+.normal-submit {
+  background: #ffcb05;
+  color: #3c5aa6;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 14px;
+  height: 30px;
+  width: 60px;
+  letter-spacing: 0.05em;
+  border: 1px solid #3c5aa6;
+  box-shadow: 1px 3px #3c5aa6;
+}
+
+.hint-modal,
+.about-modal {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+}
+
+.modal-textbox,
+.correct-answer-normal,
+.wrong-answer-normal {
+  background: white;
+  width: 70%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  border: 1px solid #3c5aa6;
+  color: rgb(42, 117, 187);
+  box-shadow: 5px 7px #3c5aa6;
+  font-family: "Ubuntu Condensed", serif;
+  font-size: 18px;
+}
+
+.close-btn {
+  align-self: flex-end;
+  margin: 1em;
+  height: 40px;
+  width: 70px;
+  background: #ffcb05;
+  border: 2px solid white;
+  color: #3c5aa6;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  border: 1px solid #3c5aa6;
+  box-shadow: 1px 3px #3c5aa6;
+}
+
+.normal-style {
+  align-self: flex-end;
+  justify-content: flex-end;
+  display: none;
+}
+
+#normal-mode {
+  background: #ffcb05;
+  border: 2px solid white;
+  color: #3c5aa6;
+  font-size: 18px;
+  font-family: "Fjalla One", sans-serif;
+  height: 35px;
+  width: 140px;
+  border: 2px solid #3c5aa6;
+  box-shadow: 1px 3px #3c5aa6;
+  position: fixed;
+  bottom: 1%;
+  right: 0;
+}
+
+/* ROCKET MOBILE HINTS  */
+
+.rocket-modal,
+.correct-answer-rocket,
+.wrong-answer-rocket {
+  width: 70%;
+  height: 60%;
+  display: flex;
+  margin-top: 2em;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background: black;
+  border: 2px solid rgba(256, 0, 10, 1);
+  color: white;
+  box-shadow: 5px 7px rgba(256, 0, 10, 1);
+  font-family: "Ubuntu Condensed", serif;
+  font-size: 18px;
+}
+
+.rocket-hint,
+.rocket-submit {
+  background: black;
+  color: white;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 14px;
+  height: 30px;
+  width: 60px;
+  letter-spacing: 0.05em;
+  border: 1px solid rgba(256, 0, 10, 1);
+  box-shadow: 1px 3px rgba(256, 0, 10, 1);
+}
+
+.rocket-btn {
+  align-self: flex-end;
+  margin: 1em;
+  height: 40px;
+  width: 70px;
+  background: black;
+  color: white;
+  border: 2px solid rgba(256, 0, 10, 1);
+  font-family: "Fjalla One", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  box-shadow: 1px 2px rgba(256, 0, 10, 1);
+}
+
+.team-rocket {
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+
+#rocket-mode {
+  background: black;
+  border: 2px solid rgba(256, 0, 10, 1);
+  color: white;
+  font-size: 18px;
+  font-family: "Fjalla One", sans-serif;
+  height: 35px;
+  box-shadow: 1px 3px rgba(256, 0, 10, 1);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#score {
+  font-size: 18px;
+  font-family: "Fjalla One", sans-serif;
+  position: absolute;
+  top: 35%;
+  left: 2%;
+}
+
+#score-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100px;
+}
+
+.normal-score {
+  background: #3c5aa6;
+  color: white;
+  box-shadow: 3px 5px #ffcb05;
+}
+
+.rocket-score {
+  box-shadow: 3px 5px white;
+  background: rgba(256, 0, 10, 1);
+  border: 2px solid black;
+  color: black;
+}
+
+#current-score {
+  margin: 0.5em;
+}
+
+/* fixing wrong/right answer textbox */
+
+.correct-answer-rocket,
+.wrong-answer-rocket,
+.correct-answer-normal,
+.wrong-answer-normal {
+  font-size: 22px;
+  width: 70%;
+}
+
+/* ////////////////////////// */
+/* desktop styling  */
+/* /////////////////////////// */
+
+@media only screen and (min-width: 900px) {
+  .normal-header h1 {
+    text-shadow: 3px 5px whitesmoke;
+    font-size: 60px;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  .rocket-header h1 {
+    text-shadow: 3px 5px rgba(256, 0, 10, 1);
+    font-size: 60px;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  nav li {
+    font-size: 28px;
+  }
+
+  header {
+    margin-bottom: 1em;
+  }
+
+  #pkmn-sprite {
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3em;
+  }
+
+  .current-pkm {
+    height: auto;
+    width: 100%;
+  }
+
+  .normal-randomizer,
+  .rocket-randomizer {
+    height: 90px;
+    width: 90%;
+    font-size: 36px;
+    margin-left: auto;
+  }
+
+  .modal-textbox,
+  .correct-answer-normal,
+  .wrong-answer-normal {
+    background: white;
+    width: 50%;
+    height: auto;
+    margin-top: 2em;
+    font-size: 36px;
+  }
+
+  .rocket-modal,
+  .correct-answer-rocket,
+  .wrong-answer-rocket {
+    width: 50%;
+    height: auto;
+    margin-top: 2em;
+    font-size: 36px;
+  }
+
+  #about-text p {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    padding: 1em;
+    font-size: 36px;
+  }
+
+  #modal-text {
+    display: flex;
+  }
+
+  #close-abt,
+  #close-bt. {
+    height: 50px;
+    width: 90px;
+    align-items: flex-end;
+  }
+
+  #btm-text {
+    margin-top: -1em;
+    margin-bottom: 0;
+  }
+
+  .correct-answer-normal,
+  .wrong-answer-normal {
+    margin-top: 0;
+    width: 65%;
+    margin-bottom: 1em;
+  }
+
+  .correct-answer-rocket,
+  .wrong-answer-rocket {
+    margin-top: 0;
+    width: 65%;
+    margin-bottom: 1em;
+  }
+
+  .hint-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #modal-text {
+    height: auto;
+    font-size: 26px;
+  }
+
+  #hint-sprite {
+    height: 150px;
+    width: 150px;
+    margin-bottom: -2em;
+  }
+
+  #hint,
+  #submit-btn {
+    height: 50px;
+    width: 90px;
+    font-size: 22px;
+  }
+
+  input {
+    height: 40px;
+    font-size: 22px;
+  }
+
+  #rocket-mode,
+  #normal-mode {
+    height: 50px;
+    font-size: 20px;
+    width: 250px;
+  }
+
+  #score {
+    font-size: 26px;
+    font-family: "Fjalla One", sans-serif;
+    position: absolute;
+    top: 40%;
+    margin-left: 3em;
+  }
+
+  #score-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+  }
+}
+
+/* global variables for the game to work on mobile and desktop DONT EDIT*/
+
+.hint-modal {
+  display: none;
+}
+
+.submit-form {
+  display: none;
+}
+
+/* .about-modal {
+  display: none;
+} */
+
+.correct-answer-normal {
+  display: none;
+}
+
+.wrong-answer-normal {
+  display: none;
+}
+
+.correct-answer-rocket {
+  display: none;
+}
+
+.wrong-answer-rocket {
+  display: none;
+}
+
+.name {
+  text-transform: capitalize;
+}
+
+.typing {
+  text-transform: capitalize;
+}
+
+.abilities {
+  text-transform: capitalize;
+}
+
+.hint-div {
+  display: none;
+}
+
+#score {
+  display: none;
+}
