@@ -104,7 +104,7 @@
 }
 
 .wtp-button {
-  margin: 4em;
+  margin: 2em;
 }
 
 /* who's that pokemon normal button  */
@@ -128,7 +128,6 @@
   font-size: 26px;
   box-shadow: 3px 5px rgba(256, 0, 10, 1);
   font-family: "Fjalla One", sans-serif;
-  margin: 2em;
   border: 2px solid rgba(256, 0, 10, 1);
 }
 
@@ -192,18 +191,13 @@ input {
   box-shadow: 1px 3px #3c5aa6;
 }
 
-.hint-modal,
-.about-modal {
+#submit-btn {
+  margin-left: 1em;
+}
+
+.hint-div {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  overflow: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  align-items: center;
+  justify-content: center;
 }
 
 .modal-textbox,
@@ -225,6 +219,21 @@ input {
   box-shadow: 5px 7px #3c5aa6;
   font-family: "Ubuntu Condensed", serif;
   font-size: 18px;
+}
+
+.hint-modal,
+.about-modal,
+#results-modal {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
 }
 
 .close-btn {
@@ -334,9 +343,6 @@ input {
 #score {
   font-size: 18px;
   font-family: "Fjalla One", sans-serif;
-  position: absolute;
-  top: 35%;
-  left: 2%;
 }
 
 #score-text {
@@ -358,10 +364,6 @@ input {
   background: rgba(256, 0, 10, 1);
   border: 2px solid black;
   color: black;
-}
-
-#current-score {
-  margin: 0.5em;
 }
 
 /* fixing wrong/right answer textbox */
@@ -517,9 +519,7 @@ input {
   #score {
     font-size: 26px;
     font-family: "Fjalla One", sans-serif;
-    position: absolute;
     top: 40%;
-    margin-left: 3em;
   }
 
   #score-text {
@@ -533,18 +533,18 @@ input {
 
 /* global variables for the game to work on mobile and desktop DONT EDIT*/
 
-.hint-modal {
+/* .hint-modal {
   display: none;
-}
+} */
 
-.submit-form {
+/* .submit-form {
   display: none;
-}
+} */
 
 /* .about-modal {
   display: none;
 } */
-
+/* 
 .correct-answer-normal {
   display: none;
 }
@@ -559,7 +559,7 @@ input {
 
 .wrong-answer-rocket {
   display: none;
-}
+} */
 
 .name {
   text-transform: capitalize;
@@ -573,10 +573,10 @@ input {
   text-transform: capitalize;
 }
 
-.hint-div {
+/* .hint-div {
   display: none;
-}
+} */
 
-#score {
+/* #score {
   display: none;
-}
+} */
