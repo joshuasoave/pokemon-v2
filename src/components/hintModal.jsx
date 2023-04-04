@@ -1,6 +1,6 @@
 import React from "react";
 
-export const HintModal = ({ pkmn, closeHintClick }) => {
+export const HintModal = ({ pkmn, closeHintClick, rocketStyle }) => {
   const sprite =
     pkmn && pkmn.sprites && pkmn.sprites.front_default
       ? pkmn.sprites.front_default
@@ -9,7 +9,10 @@ export const HintModal = ({ pkmn, closeHintClick }) => {
   const abilities = pkmn && pkmn.abilities ? pkmn.abilities : [];
   return (
     <div class="hint-modal">
-      <div class="modal-textbox" id="modal-text">
+      <div
+        class={rocketStyle ? "rocket-modal" : "modal-textbox"}
+        id="modal-text"
+      >
         <div class="sprite">
           <img id="hint-sprite" src={sprite} />
         </div>
@@ -29,7 +32,7 @@ export const HintModal = ({ pkmn, closeHintClick }) => {
         <button
           type="button"
           id="close-btn"
-          class="close-btn"
+          class={rocketStyle ? "rocket-btn" : "close-btn"}
           onClick={closeHintClick}
         >
           Close

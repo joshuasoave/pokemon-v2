@@ -1,10 +1,10 @@
 import React from "react";
 
-export const WtpButton = ({ producePokemon }) => {
+export const WtpButton = ({ producePokemon, rocketStyle }) => {
   return (
     <button
       type="button"
-      className="normal-randomizer"
+      className={rocketStyle ? "rocket-randomizer" : "normal-randomizer"}
       id="randomizer"
       onClick={producePokemon}
     >

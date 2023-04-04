@@ -8,6 +8,7 @@ import { HintModal } from "./components/hintModal";
 import { Score } from "./components/score";
 import axios from "axios";
 import { Results } from "./components/results";
+import { Footer } from "./components/footer";
 
 function App() {
   const [showAboutModal, setShowModal] = useState(true);
@@ -19,6 +20,7 @@ function App() {
   const [userAnswer, setUserAnswer] = useState("");
   const [isAnswerCorrect, setIsAnswerCorrect] = useState(false);
   const [showResults, setShowResults] = useState(false);
+  const [rocketStyle, setRocketStyle] = useState(false);
 
   const closeAbout = () => {
     setShowModal(false);
@@ -46,10 +48,13 @@ function App() {
 
   return (
     <div className="App">
-      <Header></Header>
+      <Header rocketStyle={rocketStyle}></Header>
       <div className="container">
         {showAboutModal ? (
-          <AboutModal closeAbout={closeAbout}></AboutModal>
+          <AboutModal
+            closeAbout={closeAbout}
+            rocketStyle={rocketStyle}
+          ></AboutModal>
         ) : null}
         <div className="wtp-button">
           {isPlaying ? null : (
@@ -57,12 +62,17 @@ function App() {
               setIsPlaying={setIsPlaying}
               setCurrentPokemon={setCurrentPokemon}
               producePokemon={producePokemon}
+              rocketStyle={rocketStyle}
             ></WtpButton>
           )}
         </div>
         {isPlaying && !showResults ? (
           <>
-            <Score score={score} totalGuesses={totalGuesses}></Score>
+            <Score
+              score={score}
+              rocketStyle={rocketStyle}
+              totalGuesses={totalGuesses}
+            ></Score>
             <CurrentPokemon
               pkmn={currentPokemon}
               showHintClick={showHintClick}
@@ -75,6 +85,7 @@ function App() {
               setUserAnswer={setUserAnswer}
               setIsAnswerCorrect={setIsAnswerCorrect}
               setShowResults={setShowResults}
+              rocketStyle={rocketStyle}
             ></CurrentPokemon>
           </>
         ) : null}
@@ -82,6 +93,7 @@ function App() {
           <HintModal
             pkmn={currentPokemon}
             closeHintClick={closeHintClick}
+            rocketStyle={rocketStyle}
           ></HintModal>
         ) : null}
         {isPlaying && showResults ? (
@@ -92,8 +104,10 @@ function App() {
             setShowResults={setShowResults}
             producePokemon={producePokemon}
             setUserAnswer={setUserAnswer}
+            rocketStyle={rocketStyle}
           ></Results>
         ) : null}
+        <Footer rocketStyle={rocketStyle} setRocketStyle={setRocketStyle} />
       </div>
     </div>
   );

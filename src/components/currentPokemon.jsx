@@ -7,11 +7,11 @@ export const CurrentPokemon = ({
   totalGuesses,
   setScore,
   setTotalGuesses,
-  producePokemon,
   setUserAnswer,
   userAnswer,
   setIsAnswerCorrect,
   setShowResults,
+  rocketStyle,
 }) => {
   const sprite =
     pkmn && pkmn.sprites && pkmn.sprites.front_default
@@ -41,7 +41,7 @@ export const CurrentPokemon = ({
         <button
           type="button"
           id="hint"
-          className="normal-hint"
+          className={rocketStyle ? "rocket-hint" : "normal-hint"}
           onClick={showHintClick}
         >
           Hint
@@ -61,7 +61,11 @@ export const CurrentPokemon = ({
             placeholder="Name this pokemon"
             value={userAnswer}
           />
-          <button type="submit" id="submit-btn" className="normal-submit">
+          <button
+            type="submit"
+            id="submit-btn"
+            className={rocketStyle ? "rocket-submit" : "normal-submit"}
+          >
             Submit
           </button>
         </form>

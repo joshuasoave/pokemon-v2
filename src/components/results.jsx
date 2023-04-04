@@ -7,6 +7,7 @@ export const Results = ({
   setShowResults,
   producePokemon,
   setUserAnswer,
+  rocketStyle,
 }) => {
   const closeResults = () => {
     setShowResults(false);
@@ -23,7 +24,9 @@ export const Results = ({
       {isAnswerCorrect ? (
         <div
           id="correct-answer results-modal"
-          className="correct-answer-normal"
+          className={
+            rocketStyle ? "correct-answer-rocket" : "correct-answer-normal"
+          }
         >
           <p>
             Correct! It's
@@ -32,7 +35,12 @@ export const Results = ({
           <p>You're becoming the very best!</p>
         </div>
       ) : (
-        <div id="wrong-answer results-modal" className="wrong-answer-normal">
+        <div
+          id="wrong-answer results-modal"
+          className={
+            rocketStyle ? "wrong-answer-rocket" : "wrong-answer-normal"
+          }
+        >
           <p>
             No, it's not <span> {userAnswer}</span>
           </p>
@@ -43,7 +51,10 @@ export const Results = ({
           <p>You'll get it right next time!</p>
         </div>
       )}
-      <button className="close-btn" onClick={closeResults}>
+      <button
+        className={rocketStyle ? "rocket-btn" : "close-btn"}
+        onClick={closeResults}
+      >
         Next
       </button>
     </>

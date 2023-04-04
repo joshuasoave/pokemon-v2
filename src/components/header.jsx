@@ -1,10 +1,9 @@
 import React from "react";
 
-export const Header = () => {
+export const Header = ({ rocketStyle }) => {
   return (
-    <header className="normal-header">
+    <header className={rocketStyle ? "rocket-header" : " normal-header"}>
       <h1>Pokemon Quiz Game</h1>
-      <nav className="normal-nav"></nav>
     </header>
   );
 };
