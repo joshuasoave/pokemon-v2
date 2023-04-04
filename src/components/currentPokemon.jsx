@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 export const CurrentPokemon = ({
   pkmn,
@@ -35,7 +35,7 @@ export const CurrentPokemon = ({
   return (
     <div>
       <div className="current-pokemon">
-        {pkmn ? <img src={sprite}></img> : ""}
+        {pkmn ? <img src={sprite} alt={pkmn.name}></img> : ""}
       </div>
       <div className="hint-div">
         <button
