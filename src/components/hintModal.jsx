@@ -14,7 +14,7 @@ export const HintModal = ({ pkmn, closeHintClick, rocketStyle }) => {
         id="modal-text"
       >
         <div class="sprite">
-          <img id="hint-sprite" src={sprite} />
+          <img id="hint-sprite" src={sprite} alt={pkmn.name} />
         </div>
         <div class="typing">
           <h3 id="type-h3">Type:</h3>
