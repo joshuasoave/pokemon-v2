@@ -35,7 +35,7 @@ export const CurrentPokemon = ({
   return (
     <div>
       <div className="current-pokemon">
-        {pkmn ? <img src={sprite} alt={pkmn.name}></img> : ""}
+        {pkmn ? <img id="pkmn-sprite" src={sprite} alt={pkmn.name}></img> : ""}
       </div>
       <div className="hint-div">
         <button
@@ -53,21 +53,23 @@ export const CurrentPokemon = ({
             handleSubmit(e);
           }}
         >
-          <input
-            type="text"
-            onChange={(e) => {
-              setUserAnswer(e.target.value);
-            }}
-            placeholder="Name this pokemon"
-            value={userAnswer}
-          />
-          <button
-            type="submit"
-            id="submit-btn"
-            className={rocketStyle ? "rocket-submit" : "normal-submit"}
-          >
-            Submit
-          </button>
+          <div className="input-holder">
+            <input
+              type="text"
+              onChange={(e) => {
+                setUserAnswer(e.target.value);
+              }}
+              placeholder="Name this pokemon"
+              value={userAnswer}
+            />
+            <button
+              type="submit"
+              id="submit-btn"
+              className={rocketStyle ? "rocket-submit" : "normal-submit"}
+            >
+              Submit
+            </button>
+          </div>
         </form>
       </div>
     </div>
