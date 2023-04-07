@@ -188,7 +188,7 @@ input {
   font-family: "Fjalla One", sans-serif;
   font-size: 14px;
   height: 30px;
-  width: 60px;
+  width: 80px;
   letter-spacing: 0.05em;
   border: 1px solid #3c5aa6;
   box-shadow: 1px 3px #3c5aa6;
@@ -243,7 +243,7 @@ input {
   align-self: flex-end;
   margin: 1em;
   height: 40px;
-  width: 70px;
+  width: 90px;
   background: #ffcb05;
   border: 2px solid white;
   color: #3c5aa6;
@@ -315,7 +315,7 @@ input {
   align-self: flex-end;
   margin: 1em;
   height: 40px;
-  width: 70px;
+  width: 90px;
   background: black;
   color: white;
   border: 2px solid rgba(256, 0, 10, 1);
