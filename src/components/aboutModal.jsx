@@ -4,7 +4,7 @@ export const AboutModal = ({ closeAbout, rocketStyle }) => {
   return (
     <div
       className={rocketStyle ? "rocket-modal" : "about-modal"}
-      id="about-modal"
+      id="about-container"
     >
       <div className="modal-textbox" id="about-text">
         <p>This is a game to test your Pokemon knowledge.</p>{" "}
