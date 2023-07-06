@@ -27,7 +27,7 @@ In the initial project, a theme switcher feature was implemented to enable users
 
 I simplified this when switching to React. There is still a button for the user to click on and change the theme. Now, the component will conditionally render with the appropriate class and styles based on whether or not the `rocketStyle` is set to `true`. The Team Rocket classes were essential in defining the distinct visual styles associated with each theme. By dynamically using React's conditional logic to determine the theme, the appearance of various elements on the web page could be instantly transformed to match the selected theme. This approach offered a seamless and interactive experience for users, allowing them to customize the visual aesthetics according to their preferences.
 
-![lines of code with conditional rendering between the themes](https://i.imgur.com/w8kakY1.png)
+![lines of code with conditional rendering between the themes](https://i.imgur.com/7ucRO2W.png)
 ![lines of code adding styles to the components](https://i.imgur.com/JotovFt.png)
 
 ### Code Layout
